@@ -1,0 +1,8 @@
+.combo-box-base {
+    -fx-pref-width: 110px;
+}
+
+.combo-box .text{
+    -fx-font-size: 16px;
+}
+

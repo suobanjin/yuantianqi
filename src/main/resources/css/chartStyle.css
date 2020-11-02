@@ -1,0 +1,17 @@
+.chart-legend{
+    -fx-background-color: transparent;
+}
+
+.chart{
+    -fx-background-color: transparent;
+}
+.chart-plot-background {
+    -fx-background-color: transparent;
+}
+
+.chart-vertical-grid-lines {
+    -fx-stroke: transparent;
+}
+.chart-horizontal-grid-lines {
+    -fx-stroke: transparent;
+}
