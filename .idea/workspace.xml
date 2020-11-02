@@ -6,7 +6,187 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae51878b-0a8c-4068-85b6-d5046e268e84" name="Default Changelist" comment="" />
+    <list default="true" id="ae51878b-0a8c-4068-85b6-d5046e268e84" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/weather_jar/weather.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/chinaCityInformation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cityCodes.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/css/background.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/css/chartStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/css/choiceBoxStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/css/comboBox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/css/menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/Location.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/Welcome.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/about.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/analyseweathers.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/bg01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/closeAfter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/date.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/dayWord.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/dayweather.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/developer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/error.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/iconandtitle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/menuAfter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/min.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/minAfter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/moreweathers.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/pm25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/refresh.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/refresh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/refresh2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/select.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/sheShiDu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/shiDu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/title.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/version.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/DefaultWeather.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/中度雾霾.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/中雨-大雨.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/中雨.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/中雪-大雪.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/中雪.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/冰雹.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/冻雨.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/多云-晴.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/多云.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/大暴雨-特大暴雨.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/大暴雨.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/大雨-暴雨.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/大雨.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/大雪-暴雪.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/大雪.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/大风.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/小雨-中雨.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/小雨.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/小雪-中雪.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/小雪.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/强对流.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/强沙尘暴.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/扬尘.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/晚多云.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/晚晴天.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/晴-多云.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/晴.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/晴天.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/暴雨.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/暴雪.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/沙尘.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/沙尘暴.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/浮尘.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/特大暴雨.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/轻度雾霾.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/重度雾霾.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/阴.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/阴天.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/阵雨.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/阵雪.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/雨加雪.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/雨夹雪.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/雷阵雨.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/雷阵雨伴有冰雹.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/雾.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weatherIcon/霾.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/domain/City.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/domain/CityInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/domain/Data.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/domain/Forecast.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/domain/Weather.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/domain/Word.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/domain/Yesterday.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/factory/BeanFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/service/events/ButtonEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/service/events/ButtonEventInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/service/events/MenuEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/service/events/UpdateEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/service/weatherservice/WeatherServiceImpl$Singleton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/service/weatherservice/WeatherServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/service/weatherservice/WeatherTask$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/service/weatherservice/WeatherTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/service/weatherservice/interfaces/Observer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/service/weatherservice/interfaces/Subject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/service/weatherservice/interfaces/WeatherService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/service/yiyan/DayWordService$Singleton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/service/yiyan/DayWordService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/service/yiyan/DayWordTask$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/service/yiyan/DayWordTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/utils/AddressUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/utils/DateUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/utils/DecodeCharacter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/utils/Dom4jUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/utils/GetResources.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/utils/IPUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/utils/ImageViewUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/utils/JsonToProperties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/utils/LocationUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/utils/TextUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/utils/Value.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/utils/WeatherUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/views/baseframe/BaseAnchorPane.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/views/baseframe/BaseScene.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/views/baseframe/BaseStage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/views/customize/AlertClose.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/views/customize/AlertErrorPane.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/views/customize/AlertFrame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/views/customize/AlertTop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/views/customize/ButtonStyle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/views/customize/ChartVBox.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/views/customize/ChoicePane.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/views/customize/ChoicePaneStage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/views/customize/CloseAndMin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/views/customize/HelpVBox.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/views/customize/MainStackPane.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/views/customize/MainVBox.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/views/customize/MenuFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/views/customize/ScrollPane.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/views/customize/TitleBox.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/views/customize/TopHBox.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/views/customize/WeekGridPane.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/views/customize/WelcomeView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/views/mainframe/InitAppPreloader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/views/mainframe/MainFrame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/views/manageui/ManageButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/views/manageui/ManageNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zzuli/zw/weather/views/manageui/ManageUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/original-weather-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-Test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-service.DayWordTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-service.Dom4jTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-utils.DateUtilsTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-utils.IPUtilsTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/service.DayWordTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/service.Dom4jTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/utils.DateUtilsTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/utils.IPUtilsTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mainframe/AlertFrame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mainframe/CenterFrameTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mainframe/ChartVBoxTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mainframe/GridPaneTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mainframe/MainFrameTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mainframe/TableViewTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mainframe/TestLongInitApp$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mainframe/TestLongInitApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mainframe/TestLongInitAppPreloader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/service/DayWordTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/service/Dom4jTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/service/Singleton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/DateUtilsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/IPUtilsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/weather-1.0-SNAPSHOT.jar" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +210,14 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\wu2we\Desktop\java\weather\.idea" />
+      </set>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -46,6 +234,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1ZvovJmr7prTb6M6hnuLoqBKUMb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -90,7 +279,7 @@
       <command value="mvn package" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Test.fun7">
+  <component name="RunManager" selected="Application.MainFrame">
     <configuration name="InitAppPreloader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="zzuli.zw.weather.views.mainframe.InitAppPreloader" />
       <module name="weather" />
@@ -155,8 +344,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Test.fun7" />
         <item itemvalue="Application.MainFrame" />
+        <item itemvalue="JUnit.Test.fun7" />
         <item itemvalue="JUnit.DateUtilsTest.test01" />
         <item itemvalue="JUnit.Test.fun6" />
         <item itemvalue="Application.InitAppPreloader" />
@@ -221,12 +410,31 @@
       <workItem from="1603963156172" duration="610000" />
       <workItem from="1604057739594" duration="292000" />
       <workItem from="1604145554127" duration="1302000" />
-      <workItem from="1604318381217" duration="69000" />
+      <workItem from="1604318381217" duration="1525000" />
     </task>
+    <task id="LOCAL-00001" summary="版本v1.2">
+      <created>1604318667248</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604318667248</updated>
+    </task>
+    <task id="LOCAL-00002" summary="版本v1.2">
+      <created>1604319245194</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604319245194</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="版本v1.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="版本v1.2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="892" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1604145770223">
@@ -243,38 +451,38 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="408" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1598107690092" />
-    <state x="294" y="0" key="CommitChangelistDialog2" timestamp="1604318585553">
+    <state x="294" y="0" key="CommitChangelistDialog2" timestamp="1604319244409">
       <screen x="93" y="0" width="1187" height="720" />
     </state>
-    <state x="294" y="0" key="CommitChangelistDialog2/93.0.1187.720/1920.0.1280.680@93.0.1187.720" timestamp="1604318585553" />
+    <state x="294" y="0" key="CommitChangelistDialog2/93.0.1187.720/1920.0.1280.680@93.0.1187.720" timestamp="1604319244409" />
     <state x="546" y="197" key="FileChooserDialogImpl" timestamp="1604318456573">
       <screen x="93" y="0" width="1187" height="720" />
     </state>
     <state x="527" y="197" key="FileChooserDialogImpl/62.0.1218.720@62.0.1218.720" timestamp="1599808679565" />
     <state x="771" y="295" key="FileChooserDialogImpl/62.0.1858.1080@62.0.1858.1080" timestamp="1598160112083" />
     <state x="546" y="197" key="FileChooserDialogImpl/93.0.1187.720/1920.0.1280.680@93.0.1187.720" timestamp="1604318456573" />
-    <state width="1143" height="193" key="GridCell.Tab.0.bottom" timestamp="1603887451292">
+    <state width="1143" height="193" key="GridCell.Tab.0.bottom" timestamp="1604319218012">
       <screen x="93" y="0" width="1187" height="720" />
     </state>
-    <state width="1143" height="193" key="GridCell.Tab.0.bottom/93.0.1187.720/1920.0.1280.680@93.0.1187.720" timestamp="1603887451292" />
+    <state width="1143" height="193" key="GridCell.Tab.0.bottom/93.0.1187.720/1920.0.1280.680@93.0.1187.720" timestamp="1604319218012" />
     <state width="1464" height="322" key="GridCell.Tab.0.bottom/93.0.1507.900@93.0.1507.900" timestamp="1603877030018" />
     <state width="1784" height="5" key="GridCell.Tab.0.bottom/93.0.1827.1080@93.0.1827.1080" timestamp="1603790731334" />
-    <state width="1143" height="193" key="GridCell.Tab.0.center" timestamp="1603887451291">
+    <state width="1143" height="193" key="GridCell.Tab.0.center" timestamp="1604319218012">
       <screen x="93" y="0" width="1187" height="720" />
     </state>
-    <state width="1143" height="193" key="GridCell.Tab.0.center/93.0.1187.720/1920.0.1280.680@93.0.1187.720" timestamp="1603887451291" />
+    <state width="1143" height="193" key="GridCell.Tab.0.center/93.0.1187.720/1920.0.1280.680@93.0.1187.720" timestamp="1604319218012" />
     <state width="1464" height="322" key="GridCell.Tab.0.center/93.0.1507.900@93.0.1507.900" timestamp="1603877030018" />
     <state width="1784" height="5" key="GridCell.Tab.0.center/93.0.1827.1080@93.0.1827.1080" timestamp="1603790731334" />
-    <state width="1143" height="193" key="GridCell.Tab.0.left" timestamp="1603887451291">
+    <state width="1143" height="193" key="GridCell.Tab.0.left" timestamp="1604319218012">
       <screen x="93" y="0" width="1187" height="720" />
     </state>
-    <state width="1143" height="193" key="GridCell.Tab.0.left/93.0.1187.720/1920.0.1280.680@93.0.1187.720" timestamp="1603887451291" />
+    <state width="1143" height="193" key="GridCell.Tab.0.left/93.0.1187.720/1920.0.1280.680@93.0.1187.720" timestamp="1604319218012" />
     <state width="1464" height="322" key="GridCell.Tab.0.left/93.0.1507.900@93.0.1507.900" timestamp="1603877030018" />
     <state width="1784" height="5" key="GridCell.Tab.0.left/93.0.1827.1080@93.0.1827.1080" timestamp="1603790731334" />
-    <state width="1143" height="193" key="GridCell.Tab.0.right" timestamp="1603887451291">
+    <state width="1143" height="193" key="GridCell.Tab.0.right" timestamp="1604319218012">
       <screen x="93" y="0" width="1187" height="720" />
     </state>
-    <state width="1143" height="193" key="GridCell.Tab.0.right/93.0.1187.720/1920.0.1280.680@93.0.1187.720" timestamp="1603887451291" />
+    <state width="1143" height="193" key="GridCell.Tab.0.right/93.0.1187.720/1920.0.1280.680@93.0.1187.720" timestamp="1604319218012" />
     <state width="1464" height="322" key="GridCell.Tab.0.right/93.0.1507.900@93.0.1507.900" timestamp="1603877030018" />
     <state width="1784" height="5" key="GridCell.Tab.0.right/93.0.1827.1080@93.0.1827.1080" timestamp="1603790731334" />
     <state width="1175" height="266" key="GridCell.Tab.1.bottom/62.0.1218.720@62.0.1218.720" timestamp="1602316802016" />
@@ -294,6 +502,14 @@
     </state>
     <state x="492" y="182" key="SettingsEditor/62.0.1858.1080@62.0.1858.1080" timestamp="1597832109147" />
     <state x="242" y="0" key="SettingsEditor/93.0.1187.720/1920.0.1280.680@93.0.1187.720" timestamp="1604318449434" />
+    <state x="279" y="90" key="Vcs.Push.Dialog.v2" timestamp="1604319252368">
+      <screen x="93" y="0" width="1187" height="720" />
+    </state>
+    <state x="279" y="90" key="Vcs.Push.Dialog.v2/93.0.1187.720/1920.0.1280.680@93.0.1187.720" timestamp="1604319252368" />
+    <state x="482" y="273" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604319034749">
+      <screen x="93" y="0" width="1187" height="720" />
+    </state>
+    <state x="482" y="273" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/93.0.1187.720/1920.0.1280.680@93.0.1187.720" timestamp="1604319034749" />
     <state x="93" y="58" key="new project wizard" timestamp="1603854913891">
       <screen x="93" y="0" width="1187" height="720" />
     </state>
