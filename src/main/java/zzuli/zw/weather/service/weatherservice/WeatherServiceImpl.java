@@ -54,7 +54,6 @@ public class WeatherServiceImpl implements WeatherService, Subject {
     }
     /**
      * 通过城市名称获取天气信息
-     *
      * @param cityName 城市名称
      * @return Weather
      */
