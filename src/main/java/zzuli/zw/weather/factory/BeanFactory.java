@@ -38,7 +38,6 @@ public class BeanFactory {
     private static Map<String, Weather> cityWeather = new HashMap<>();
     private static Properties application;
     private static final String APPLICATION_CONFIG = "application.properties";
-    private static WeekGridPane weekGridPane;
     static{
         properties = new Properties();
         application = new Properties();
