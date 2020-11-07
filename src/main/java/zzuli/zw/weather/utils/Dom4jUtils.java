@@ -15,7 +15,7 @@ import java.util.List;
  */
 public class Dom4jUtils {
     //获取省份
-    public static List<String> getCitys(String provinceName){
+    public static List<String> getCites(String provinceName){
         return getNodeList("//province[@name='"+provinceName+"']//city/@name");
     }
 
