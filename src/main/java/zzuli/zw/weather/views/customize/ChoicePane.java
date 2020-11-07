@@ -1,9 +1,7 @@
 package zzuli.zw.weather.views.customize;
 
 import javafx.animation.KeyFrame;
-import javafx.animation.RotateTransition;
 import javafx.animation.Timeline;
-import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -17,7 +15,6 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import javafx.stage.Window;
 import javafx.util.Duration;
 import zzuli.zw.weather.domain.Weather;
 import zzuli.zw.weather.factory.BeanFactory;
@@ -28,7 +25,6 @@ import zzuli.zw.weather.utils.*;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.Objects;
 
 public class ChoicePane extends VBox {
     private Button button = new Button("确 定");
@@ -67,7 +63,7 @@ public class ChoicePane extends VBox {
         comboBox3.setPromptText("选择县区");
         comboBox1.setOnAction(event -> {
             String province = comboBox1.getSelectionModel().getSelectedItem();
-            List<String> city = Dom4jUtils.getCitys(province);
+            List<String> city = Dom4jUtils.getCites(province);
             comboBox2.setItems(FXCollections.observableArrayList(city));
             comboBox2.setValue(comboBox2.getItems().get(0));
         });
