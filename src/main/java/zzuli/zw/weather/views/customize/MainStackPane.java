@@ -13,7 +13,6 @@ public class MainStackPane extends StackPane {
             BeanFactory.getManageNode().put("MainVBox",vBox);
             this.getChildren().add(vBox);
         }
-        //this.setPrefSize(650,500);
         BeanFactory.getManageNode().put("mainStack",this);
     }
 }
