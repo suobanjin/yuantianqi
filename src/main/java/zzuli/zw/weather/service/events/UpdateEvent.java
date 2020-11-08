@@ -3,15 +3,23 @@ import javafx.animation.FadeTransition;
 import javafx.application.Platform;
 import javafx.scene.Node;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.util.Duration;
+import zzuli.zw.weather.domain.Forecast;
 import zzuli.zw.weather.domain.Weather;
 import zzuli.zw.weather.factory.BeanFactory;
 import zzuli.zw.weather.utils.DateUtils;
+import zzuli.zw.weather.utils.ImageViewUtils;
+import zzuli.zw.weather.utils.TextUtils;
 import zzuli.zw.weather.utils.WeatherUtils;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Timer;
+import java.util.TimerTask;
 
 
 /**
@@ -33,6 +41,47 @@ public class UpdateEvent {
     public void update(Weather weather) {
         Platform.runLater(() -> {
             BeanFactory.getCityWeather().put("cityWeather",weather);
+            Forecast forecast = weather.getData().getForecast()[0];
+            int fl = Integer.parseInt(forecast.getFl().substring(0, 1));
+            String type = forecast.getType();
+            ImageView imageView = null;
+            Text red = null;
+            if (fl > 1){
+                imageView = ImageViewUtils.setImage(25, 30, "warming.png");
+                red = TextUtils.setText(20, "red", "", "今日有风，请注意防护");
+            }
+            if (fl > 5){
+                imageView = ImageViewUtils.setImage(25, 30, "warming.png");
+                red = TextUtils.setText(20, "red", "", "今日有强风，请注意防护");
+            }
+            if (type.contains("雨")){
+                imageView = ImageViewUtils.setImage(25, 30, "warming.png");
+                red = TextUtils.setText(20, "red", "", "今日有雨，不要忘记带伞");
+            }
+            if (imageView != null) {
+                red.setLayoutY(-10);
+                red.setLayoutX(50);
+                HBox hBox = new HBox(imageView, red);
+                hBox.setSpacing(10);
+                AnchorPane anchorPane = new AnchorPane(hBox);
+                VBox parent = (VBox) BeanFactory.getManageNode().get("mainVBox");
+                parent.getChildren().add(0, anchorPane);
+                Timer timer = new Timer();
+                Text finalRed = red;
+                timer.schedule(new TimerTask() {
+                    @Override
+                    public void run() {
+                        TimerTask task = this;
+                        Platform.runLater(() -> {
+                            finalRed.setText("");
+                            parent.getChildren().remove(0);
+                            this.cancel();
+                            task.cancel();
+                            timer.cancel();
+                        });
+                    }
+                }, 5000);
+            }
             updateWeather(weather);
         });
     }
