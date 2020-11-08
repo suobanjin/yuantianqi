@@ -1,4 +1,5 @@
 package zzuli.zw.weather.views.customize;
+import javafx.application.Platform;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Cursor;
@@ -19,6 +20,9 @@ import zzuli.zw.weather.utils.ImageViewUtils;
 import zzuli.zw.weather.utils.TextUtils;
 import zzuli.zw.weather.utils.WeatherUtils;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class MainVBox extends VBox implements Observer {
 
     public MainVBox() {
@@ -26,6 +30,28 @@ public class MainVBox extends VBox implements Observer {
         HBox top = top();
         GridPane gridPane = center();
         VBox vBox = bottom();
+        /*ImageView imageView = ImageViewUtils.setImage(25, 30, "warming.png");
+        Text red = TextUtils.setText(20, "red", "", "今日有暴风，请注意防护");
+        red.setLayoutY(-10);
+        red.setLayoutX(50);
+        HBox hBox = new HBox(imageView,red);
+        hBox.setSpacing(10);
+        AnchorPane anchorPane = new AnchorPane(hBox);
+        VBox parent = this;
+        Timer timer = new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                TimerTask task = this;
+                Platform.runLater(()->{
+                    red.setText("");
+                    parent.getChildren().remove(0);
+                    this.cancel();
+                    task.cancel();
+                    timer.cancel();
+                });
+             }
+            },5000);*/
         this.getChildren().addAll(top, gridPane, vBox);
         BeanFactory.getManageNode().put("mainVBox", this);
         BeanFactory.getManageNode().put("main_top", top);
