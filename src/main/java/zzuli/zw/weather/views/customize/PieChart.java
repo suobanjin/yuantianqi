@@ -17,43 +17,54 @@ import zzuli.zw.weather.domain.Weather;
 public class PieChart {
 
     private final static String TYPE1 = "晴";
-    private final static String TYPE2 = "中雨";
-    private final static String TYPE3 = "大雨";
-    private final static String TYPE4 = "阴";
-    private final static String TYPE5 = "小雨";
-    private final static String TYPE6 = "其它";
-    private final static String TYPE7 = "暴雨";
+    private final static String TYPE2 = "雨";
+    private final static String TYPE3 = "阴";
+    private final static String TYPE4 = "多云";
+    private final static String TYPE5 = "霾";
+    private final static String TYPE6 = "雪";
+    private final static String TYPE7 = "冰雹";
+    private final static String TYPE8 = "其它";
     public javafx.scene.chart.PieChart getPieChart(Weather weather){
         Forecast[] forecasts = weather.getData().getForecast();
         int num1 = 0; //晴
-        int num2 = 0; //中雨
-        int num3 = 0; //大雨
-        int num4 = 0; //阴
-        int num5 = 0; //小雨
-        int num6 = 0; //其它
+        int num2 = 0; //雨
+        int num3 = 0; //阴
+        int num4 = 0; //多云
+        int num5 = 0; //霾
+        int num6 = 0; //雪
+        int num7 = 0; //冰雹
+        int num8 = 0; //其它
         for (Forecast forecast : forecasts) {
             String type = forecast.getType();
+            System.out.println(type);
             if (type.contains(TYPE1)){
                 num1++;
             }else if (type.contains(TYPE2)){
                 num2++;
-            }else if (type.contains(TYPE3) || type.contains(TYPE7)){
+            }else if (type.contains(TYPE3)){
                 num3++;
             }else if (type.contains(TYPE4)){
                 num4++;
             }else if (type.contains(TYPE5)){
                 num5++;
-            }else{
+            }else if (type.contains(TYPE6)) {
                 num6++;
+            } else if (type.contains(TYPE7)){
+                num7++;
+            }else {
+                num8++;
             }
         }
+        System.out.println(num6);
         ObservableList<javafx.scene.chart.PieChart.Data> pieChartData = FXCollections
                 .observableArrayList(new javafx.scene.chart.PieChart.Data(TYPE1, num1),
                         new javafx.scene.chart.PieChart.Data(TYPE2, num2),
                         new javafx.scene.chart.PieChart.Data(TYPE3, num3),
                         new javafx.scene.chart.PieChart.Data(TYPE4, num4),
                         new javafx.scene.chart.PieChart.Data(TYPE5, num5),
-                        new javafx.scene.chart.PieChart.Data(TYPE6, num6));
+                        new javafx.scene.chart.PieChart.Data(TYPE6,num6 ),
+                        new javafx.scene.chart.PieChart.Data(TYPE7, num7),
+                        new javafx.scene.chart.PieChart.Data(TYPE8, num8));
         javafx.scene.chart.PieChart chart = new javafx.scene.chart.PieChart(pieChartData);
         for (javafx.scene.chart.PieChart.Data d : pieChartData) {
             d.getNode().setOnMouseEntered(new MouseHoverAnimation(d, chart));
