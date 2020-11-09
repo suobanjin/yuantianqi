@@ -3,7 +3,6 @@ package zzuli.zw.weather.views.customize;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
-import javafx.scene.Scene;
 import javafx.scene.chart.*;
 import javafx.scene.control.Button;
 import javafx.scene.control.Tooltip;
@@ -55,6 +54,24 @@ public class ChartVBox extends VBox implements Observer {
             }
         } else {
             return paintBarChart(weather);
+        }
+        return null;
+    }
+    public javafx.scene.chart.PieChart getPieChartView(){
+        Weather weather = BeanFactory.getCityWeather().get("cityWeather");
+        if (weather == null) {
+            try {
+                weather = new WeatherServiceImpl().weatherByCityId(BeanFactory.getCityInfo().get("cityCode"));
+                return new PieChart().getPieChart(weather);
+            } catch (IOException e) {
+                AlertFrame frame = new AlertFrame();
+                AlertErrorPane errorPane = new AlertErrorPane();
+                errorPane.setErrorMessage("数据获取失败！");
+                frame.show();
+                e.printStackTrace();
+            }
+        } else {
+            return new PieChart().getPieChart(weather);
         }
         return null;
     }
@@ -148,8 +165,9 @@ public class ChartVBox extends VBox implements Observer {
             frame.show();
         } else {
             HBox hBox = new HBox();
-            Button b1 = new Button("折线图");
-            Button b2 = new Button("柱状图");
+            Button b1 = new Button("温度折线图");
+            Button b2 = new Button("温度柱状图");
+            Button b3 = new Button("天气状况饼状图");
             b2.setOnAction(event -> {
                 this.getChildren().remove(1);
                 this.getChildren().add(getBarChartView());
@@ -158,7 +176,11 @@ public class ChartVBox extends VBox implements Observer {
                 this.getChildren().remove(1);
                 this.getChildren().add(1, getChartView());
             });
-            hBox.getChildren().addAll(b1,b2);
+            b3.setOnAction(event -> {
+                this.getChildren().remove(1);
+                this.getChildren().add(1, getPieChartView());
+            });
+            hBox.getChildren().addAll(b1,b2,b3);
             hBox.setSpacing(10);
             this.getChildren().addAll(hBox,getChartView());
             this.setPrefSize(380, 480);
