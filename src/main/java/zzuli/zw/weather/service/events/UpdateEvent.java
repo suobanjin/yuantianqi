@@ -58,6 +58,10 @@ public class UpdateEvent {
                 imageView = ImageViewUtils.setImage(25, 30, "warming.png");
                 red = TextUtils.setText(20, "red", "", "今日有雨，不要忘记带伞");
             }
+            if (type.contains("雪")){
+                imageView = ImageViewUtils.setImage(25, 30, "warming.png");
+                red = TextUtils.setText(20, "red", "", "今日有雪，不要忘记带伞");
+            }
             if (imageView != null) {
                 red.setLayoutY(-10);
                 red.setLayoutX(50);
