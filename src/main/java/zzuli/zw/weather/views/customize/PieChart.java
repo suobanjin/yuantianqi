@@ -14,6 +14,11 @@ import javafx.util.Duration;
 import zzuli.zw.weather.domain.Forecast;
 import zzuli.zw.weather.domain.Weather;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class PieChart {
 
     private final static String TYPE1 = "晴";
@@ -55,16 +60,16 @@ public class PieChart {
                 num8++;
             }
         }
-        System.out.println(num6);
+        Map<String,Integer> map = new HashMap<>(8);
+        putType(num1, num2, num3, num4, map, TYPE1, TYPE2, TYPE3, TYPE4);
+        putType(num5, num6, num7, num8, map, TYPE5, TYPE6, TYPE7, TYPE8);
+        List<javafx.scene.chart.PieChart.Data> list = new ArrayList<>();
+        map.forEach((key,value) -> {
+            javafx.scene.chart.PieChart.Data data = new javafx.scene.chart.PieChart.Data(key, value);
+            list.add(data);
+        });
         ObservableList<javafx.scene.chart.PieChart.Data> pieChartData = FXCollections
-                .observableArrayList(new javafx.scene.chart.PieChart.Data(TYPE1, num1),
-                        new javafx.scene.chart.PieChart.Data(TYPE2, num2),
-                        new javafx.scene.chart.PieChart.Data(TYPE3, num3),
-                        new javafx.scene.chart.PieChart.Data(TYPE4, num4),
-                        new javafx.scene.chart.PieChart.Data(TYPE5, num5),
-                        new javafx.scene.chart.PieChart.Data(TYPE6,num6 ),
-                        new javafx.scene.chart.PieChart.Data(TYPE7, num7),
-                        new javafx.scene.chart.PieChart.Data(TYPE8, num8));
+                .observableArrayList(list);
         javafx.scene.chart.PieChart chart = new javafx.scene.chart.PieChart(pieChartData);
         for (javafx.scene.chart.PieChart.Data d : pieChartData) {
             d.getNode().setOnMouseEntered(new MouseHoverAnimation(d, chart));
@@ -73,6 +78,22 @@ public class PieChart {
         chart.setClockwise(false);
         return chart;
     }
+
+    private void putType(int num1, int num2, int num3, int num4, Map<String, Integer> map, String type1, String type2, String type3, String type4) {
+        if (num1 != 0){
+            map.put(type1, num1);
+        }
+        if (num2 != 0){
+            map.put(type2, num2);
+        }
+        if (num3 != 0){
+            map.put(type3, num3);
+        }
+        if (num4 != 0){
+            map.put(type4, num4);
+        }
+    }
+
     static class MouseHoverAnimation implements EventHandler<Event> {
         static final Duration ANIMATION_DURATION = new Duration(500);
         static final double ANIMATION_DISTANCE = 0.15;
