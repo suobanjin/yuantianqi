@@ -24,4 +24,9 @@ public class IPUtils {
         }
         return InetAddress.getLocalHost().getHostAddress();
     }
+
+    public static void main(String[] args) throws UnknownHostException {
+        String ip = IPUtils.getIp();
+        System.out.println(ip);
+    }
 }

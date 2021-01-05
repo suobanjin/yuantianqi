@@ -30,4 +30,5 @@ public class AlertFrame extends BaseStage {
         this.setScene(scene);
         this.initModality(Modality.APPLICATION_MODAL);
     }
+
 }

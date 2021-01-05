@@ -43,4 +43,9 @@ public class LocationUtils {
         return addressDetailNode.path("city").asText();
     }
 
+    public static void main(String[] args) throws IOException {
+        String addrName = LocationUtils.getAddrName();
+        System.out.println(addrName);
+    }
+
 }

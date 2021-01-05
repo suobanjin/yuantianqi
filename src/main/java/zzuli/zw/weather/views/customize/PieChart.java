@@ -41,7 +41,6 @@ public class PieChart {
         int num8 = 0; //其它
         for (Forecast forecast : forecasts) {
             String type = forecast.getType();
-            System.out.println(type);
             if (type.contains(TYPE1)){
                 num1++;
             }else if (type.contains(TYPE2)){
@@ -64,7 +63,9 @@ public class PieChart {
         putType(num1, num2, num3, num4, map, TYPE1, TYPE2, TYPE3, TYPE4);
         putType(num5, num6, num7, num8, map, TYPE5, TYPE6, TYPE7, TYPE8);
         List<javafx.scene.chart.PieChart.Data> list = new ArrayList<>();
-        map.forEach((key,value) -> {
+        map.forEach((key, value) -> {
+            //Integer count = finalNum + finalNum1 + finalNum2 + finalNum3 + finalNum4 + finalNum5 + finalNum6 + finalNum7;
+            //String temp = "("+value/count +")";
             javafx.scene.chart.PieChart.Data data = new javafx.scene.chart.PieChart.Data(key, value);
             list.add(data);
         });

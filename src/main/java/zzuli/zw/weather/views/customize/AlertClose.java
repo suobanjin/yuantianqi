@@ -18,7 +18,6 @@ public class AlertClose extends HBox {
         ButtonEvent buttonEvent = new ButtonEvent();
         buttonEvent.alertCloseEvent(close);
     }
-
     /**
      * 设置按钮的样式
      * @param button 按钮
