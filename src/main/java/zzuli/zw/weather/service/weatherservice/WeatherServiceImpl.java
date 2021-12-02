@@ -2,7 +2,6 @@ package zzuli.zw.weather.service.weatherservice;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.io.IOUtils;
-import sun.awt.SunHints;
 import zzuli.zw.weather.domain.Weather;
 import zzuli.zw.weather.factory.BeanFactory;
 import zzuli.zw.weather.service.weatherservice.interfaces.Observer;
