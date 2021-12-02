@@ -123,7 +123,8 @@ public class MainFrame extends Application {
         //通过事件监听更新一言部分的界面
         dayWordTask.valueProperty().addListener((observable, oldValue, newValue) -> {
             UpdateEvent updateEvent = new UpdateEvent();
-            updateEvent.updateWord(newValue);
+            //updateEvent.updateWord(newValue);
+            Platform.runLater(()-> updateEvent.updateWord(newValue));
         });
     }
 }
