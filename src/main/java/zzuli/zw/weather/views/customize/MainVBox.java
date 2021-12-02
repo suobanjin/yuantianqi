@@ -1,4 +1,5 @@
 package zzuli.zw.weather.views.customize;
+
 import javafx.application.Platform;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -16,12 +17,10 @@ import zzuli.zw.weather.service.events.UpdateEvent;
 import zzuli.zw.weather.service.weatherservice.WeatherServiceImpl;
 import zzuli.zw.weather.service.weatherservice.interfaces.Observer;
 import zzuli.zw.weather.service.yiyan.DayWordService;
+import zzuli.zw.weather.service.yiyan.DayWordTask;
 import zzuli.zw.weather.utils.ImageViewUtils;
 import zzuli.zw.weather.utils.TextUtils;
 import zzuli.zw.weather.utils.WeatherUtils;
-
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class MainVBox extends VBox implements Observer {
 
@@ -57,12 +56,14 @@ public class MainVBox extends VBox implements Observer {
         BeanFactory.getManageNode().put("main_top", top);
         this.setPadding(new Insets(0, 0, 0, -32));
     }
+
     private String wenDu = "NA";
 
     @Override
-    public void update(){
+    public void update() {
 
     }
+
     public HBox top() {
         HBox hBox = new HBox();
         String wenDu = "NA";
@@ -87,7 +88,7 @@ public class MainVBox extends VBox implements Observer {
         //
 
         ImageView view = WeatherUtils.checkAndSetting("DefaultWeather");
-        Text text3 = TextUtils.setText(16, spacingStr + spacingStr + "  " + spacingStr+spacingStr+spacingStr);
+        Text text3 = TextUtils.setText(16, spacingStr + spacingStr + "  " + spacingStr + spacingStr + spacingStr);
         BeanFactory.getManageNode().put("typeAndQuality", text3);
         BeanFactory.getManageNode().put("typeImage", view);
         Button button = new Button();
@@ -100,7 +101,7 @@ public class MainVBox extends VBox implements Observer {
 
         //
         ImageView view2 = ImageViewUtils.setImage(35, "Location.png");
-        Text text4 = TextUtils.setText(16, spacingStr + spacingStr + "  " + spacingStr+spacingStr+spacingStr);
+        Text text4 = TextUtils.setText(16, spacingStr + spacingStr + "  " + spacingStr + spacingStr + spacingStr);
         BeanFactory.getManageNode().put("locationText", text4);
         Label label = new Label(" [切换]");
         label.setOnMousePressed(event -> {
@@ -137,7 +138,7 @@ public class MainVBox extends VBox implements Observer {
         gridPane.addRow(6, view6, text7);
         gridPane.setVgap(10);
         gridPane.setHgap(4);
-        gridPane.setPadding(new Insets(0,0,0,38));
+        gridPane.setPadding(new Insets(0, 0, 0, 38));
         return gridPane;
     }
 
@@ -147,15 +148,24 @@ public class MainVBox extends VBox implements Observer {
 
         Text text = TextUtils.setText("开启一天好心情！ —— 猿天气 ", 1);
         text.setOnMouseClicked(event -> {
-            UpdateEvent updateEvent = new UpdateEvent();
-            DayWordService dayWordService = new DayWordService();
-            updateEvent.updateWord(dayWordService.getWord());
+            /*Platform.runLater(() -> {
+                UpdateEvent updateEvent = new UpdateEvent();
+                DayWordService dayWordService = new DayWordService();
+                updateEvent.updateWord(dayWordService.getWord());
+            });*/
+            DayWordTask dayWordTask = new DayWordTask();
+            dayWordTask.valueProperty().addListener((observable, oldValue, newValue) -> {
+                UpdateEvent updateEvent = new UpdateEvent();
+                //updateEvent.updateWord(newValue);
+                Platform.runLater(()-> updateEvent.updateWord(newValue));
+            });
+            dayWordTask.start();
         });
         text.setOnMouseEntered(event -> {
             text.setCursor(Cursor.HAND);
         });
         TextUtils.setText(text, 16);
-        BeanFactory.getManageNode().put("yiYanWord",text);
+        BeanFactory.getManageNode().put("yiYanWord", text);
         text.setWrappingWidth(350);
         hBox.setSpacing(12);
         hBox.setAlignment(Pos.CENTER);
